@@ -1,0 +1,1 @@
+Paleta de colores elegida: #C5C5C5 #4C5B61 #829191 #949B96 #2C423F
