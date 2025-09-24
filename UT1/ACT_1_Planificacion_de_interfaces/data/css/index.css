@@ -138,6 +138,39 @@ footer ul {
     font-size: 15px;
 }
 
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    width: 60%;
+    height: 160px;
+    border: 1px solid rgb(187, 187, 187);
+    margin-top: 70px;
+    border-radius: 15px;
+    background-color: white;
+    transition-duration: .1s;
+}
+
+.experience:hover{
+    filter: drop-shadow(0 0 0.15rem rgb(189, 189, 189));
+}
+
+.experience > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience div h1 {
+    margin: 5px;
+}
+
+.experience div span {
+    margin-left: 20px; /* Se mueve ligeramente el texto para que a simple vista parezca realmente centrado */
+}
+
 .page-info {
     display: flex;
     flex-direction: row;
