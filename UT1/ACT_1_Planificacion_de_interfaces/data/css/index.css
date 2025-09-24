@@ -138,6 +138,15 @@ footer ul {
     font-size: 15px;
 }
 
+.whoami-img {
+    transition: transform .15s ease-in;
+    cursor: pointer;
+}
+
+.whoami-img:hover {
+    transform: scale(1.02);
+}
+
 .experience {
     display: flex;
     flex-direction: row;
@@ -177,7 +186,7 @@ footer ul {
     margin-top: 100px;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 3000px;
+    margin-bottom: 100px;
 }
 
 .page-info > * {
@@ -200,6 +209,11 @@ footer ul {
     text-align: left;
     align-items: start;
     margin-left: 20px;
+    transition-duration: .2s;
+}
+
+.page-info > div:hover {
+    background-color: #f5f5f5;
 }
 
 .page-info > div:nth-child(2)::before {
