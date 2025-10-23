@@ -190,10 +190,7 @@ footer ul {
     margin-top: 100px;
     justify-content: center;
     gap: 30px;
-<<<<<<< HEAD
     margin-bottom: 100px;
-=======
->>>>>>> a894f125527408119f4ec476ec5167889f42e5f0
 }
 
 .page-info > * {
@@ -216,15 +213,12 @@ footer ul {
     text-align: left;
     align-items: start;
     margin-left: 20px;
-<<<<<<< HEAD
     transition-duration: .2s;
 }
 
 .page-info > div:hover {
     background-color: #f5f5f5;
-=======
     filter: drop-shadow(0 0 0.50rem rgb(230, 230, 230));
->>>>>>> a894f125527408119f4ec476ec5167889f42e5f0
 }
 
 .page-info > div:nth-child(2)::before {

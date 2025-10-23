@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+}
+.container {
+  
+}
+
+/* El contenedor flex para la primera fila de contenido */
+.content_wrapper {
+  display: flex;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid grey;
+}
+
+/* El menú */
+nav {
+  width: 200px;
+  padding-left: 20px;
+}
+
+nav div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* El elemento principal */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 100px;
+  border: 1px solid grey;
+  padding: 20px;
+  padding-bottom: 70px;
+  border-radius: 30px; 
+  margin-right: 20px;
+  text-align: center;
+}
+
+main img {
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.content_wrapper article:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Artículo. Imágenes pequeñas */
+article {
+  border: 1px solid grey;
+  padding: 20px;
+  padding-bottom: 70px;
+  border-radius: 30px;
+}
+
+.articles {
+  display: flex;
+  padding: 30px;
+  padding-bottom: 100px;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+article img {
+  width: 500px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+/* Pie de la página */
+/* Pie de la página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+  border-top: 1px solid grey;
+  padding-top: 20px;
+}
+
+footer img {
+  width: 32px;
+}
