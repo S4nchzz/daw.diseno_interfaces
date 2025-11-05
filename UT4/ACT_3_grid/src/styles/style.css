@@ -14,6 +14,9 @@ header {
     align-items: center;
     gap: 5px;
     margin-left: 20px;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 header nav ul {
@@ -27,6 +30,8 @@ header nav ul {
     padding: 10px;
     flex-wrap: wrap;
 
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 header nav ul li {
@@ -47,14 +52,16 @@ body {
 
 main {
     width: 80%;
-    
     display: grid;
-    grid-template-columns: 1.5fr .5fr;
+    grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
-    gap: 8px;
-
-    padding-top: 60px;
     gap: 100px;
+    padding-top: 60px;
+}
+
+.loremIpsumContainer {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
 .imagesContainer {
@@ -63,6 +70,9 @@ main {
     align-items: center;
     justify-content: center;
     background-color: red;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
 }
 
 .imagesContainer img {
@@ -81,6 +91,9 @@ footer {
 
 footer h4 {
     margin-left: 20px;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 footer ul {
@@ -89,4 +102,7 @@ footer ul {
     list-style-type: none;
     gap: 10px;
     margin-right: 20px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
