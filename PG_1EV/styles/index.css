@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat.ttf');
+}
+
+* {
+    font-family: Montserrat;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-size: .9rem;
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    background-color: white;
+}
+
+nav ul li a:hover {
+    transition: .15s ease-in;
+    color: black;
+}
+
+nav ul li a {
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title_desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.desc {
+    color: grey;
+}
+
+.img_group {
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.img_group img {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: .15s ease-in;
+}
+
+.img_group img:first-of-type {
+    top: 10%;
+    left: 0%;
+    z-index: 2;
+}
+
+.img_group img:nth-of-type(2) {
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    z-index: 1;
+}
+
+.img_group img:last-of-type {
+    top: 40%;
+    left: 20%;
+    z-index: 0;
+}
