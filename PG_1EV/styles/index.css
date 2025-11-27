@@ -23,6 +23,7 @@ nav {
     width: 100%;
     border-bottom: 1px solid rgb(219, 219, 219);
     background-color: white;
+    z-index: 100;
 }
 
 nav ul li a:hover {
@@ -36,12 +37,33 @@ nav ul li a {
 }
 
 .container {
+
+}
+
+.cner_header {
     display: flex;
     height: 90vh;
     justify-content: center;
     gap: 100px;
     align-items: center;
     margin-top: 50px;
+    opacity: 0;
+}
+
+.cner_header {
+    animation: opacityAnimation 1.2s ease-in-out forwards;
+    opacity: 1;
+    padding-bottom: 200px;
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .title_desc {
@@ -52,7 +74,7 @@ nav ul li a {
 
 .title {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .desc {
@@ -72,6 +94,10 @@ nav ul li a {
     transition: .15s ease-in;
 }
 
+.img_group img:hover {
+    scale: 1.005;
+}
+
 .img_group img:first-of-type {
     top: 10%;
     left: 0%;
@@ -89,4 +115,29 @@ nav ul li a {
     top: 40%;
     left: 20%;
     z-index: 0;
+}
+
+.cner_body {
+}
+
+.cner_body img {
+    width: 50%;
+}
+
+.main_desc {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 40px;
+}
+
+.main_desc_text1 {
+    width: 40%;
+    padding: 50px;
+}
+
+.main_desc_text2 {
+    width: 100%;
+    padding: 50px;
 }
